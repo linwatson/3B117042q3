@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>login</title>
+</head>
+<body>
+    <h1>登入頁</h1>
+    <form method="post">
+        <label for="idno">身份證號:</label>
+        <input type="text" id="idno" name="idno"><br><br>
+        <label for="pwd">密碼:</label>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <button type="submit">登入</button>
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </form>
+</body>
+</html>
